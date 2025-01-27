@@ -63,7 +63,8 @@ A simple linear regression model is used to predict the RSS values based on the 
 `β = (Xᵀ X)⁻¹ Xᵀ y`
 
 Where:
-- \( X \) is the design matrix, which includes the log distances and a bias term (constant).
-- \( y \) is the vector of RSS values.
+- `X` is the design matrix, which includes the log distances and a bias term (constant).  
+- `y` is the vector of RSS values.
+
 
 The linear regression model helps establish a baseline and provides a straightforward relationship between log distance and RSS values.
