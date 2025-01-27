@@ -48,9 +48,8 @@ Both files are required to be present in the same directory as the Python script
 ### Log Distance Model
 The distance between a receiver and a transmitter is calculated using the Euclidean distance formula:
 
-$$
-\text{Distance} = (x_2 - x_1)^2 + (y_2 - y_1)^2
-$$
+`Distance = √((x₂ - x₁)² + (y₂ - y₁)²)`
+
 This distance is then converted to a logarithmic scale using the formula:
 
 \[
