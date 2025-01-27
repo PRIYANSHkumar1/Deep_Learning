@@ -52,9 +52,8 @@ The distance between a receiver and a transmitter is calculated using the Euclid
 
 This distance is then converted to a logarithmic scale using the formula:
 
-\[
-\text{Log Distance} = -10 \times \log_{10}(\text{Distance})
-\]
+`Log Distance = -10 * log₁₀(Distance)`
+
 
 This transformation allows the model to handle the wide range of distances more effectively and aligns with common practices in signal propagation modeling.
 
