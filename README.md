@@ -60,9 +60,7 @@ This transformation allows the model to handle the wide range of distances more 
 ### Linear Regression
 A simple linear regression model is used to predict the RSS values based on the calculated log distance. The model is implemented using the closed-form solution for linear regression:
 
-\[
-\beta = (X^T X)^{-1} X^T y
-\]
+`β = (Xᵀ X)⁻¹ Xᵀ y`
 
 Where:
 - \( X \) is the design matrix, which includes the log distances and a bias term (constant).
