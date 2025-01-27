@@ -95,3 +95,15 @@ python model.py
 - A graph comparing the training and testing data with the predicted values.
 - Training and testing loss curves over epochs.
 - A bar plot showing the performance metrics (MSE and MAE)
+
+## Results
+The script will print the following evaluation results:
+
+- **Linear Regression Model**: Displays the train and test loss for the linear regression model.
+- **Neural Network Model**: Displays the train and test loss (MSE) for the neural network.
+- **Training Loss vs Testing Loss**: A plot will show the loss curves over the training epochs.
+- **Model Performance**: A bar chart compares the loss (MSE) of both models on training and testing data.
+###Example Plots:
+- **RSS Value vs Log Distance Plot**: Shows the relationship between log distance and RSS values.
+- **Loss Curves**: A plot showing the training and validation loss over epochs for the neural network model.
+- **Performance Metrics Bar Plot**: A bar plot comparing the loss for both models.
