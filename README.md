@@ -42,3 +42,33 @@ The project uses two main input files:
 2. **rss_values.txt**: This file contains the corresponding RSS values for the transmitter-receiver pairs. The values are organized in a matrix format, where rows represent different receivers, and columns represent different transmitters. The matrix entries indicate the signal strength (RSS) between a specific transmitter and receiver. If a value is `np.inf`, it indicates that no valid signal is received between that pair.
 
 Both files are required to be present in the same directory as the Python script for proper execution of the model.
+
+## Methodology
+
+### Log Distance Model
+The distance between a receiver and a transmitter is calculated using the Euclidean distance formula:
+
+\[
+\text{Distance} = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
+\]
+
+This distance is then converted to a logarithmic scale using the formula:
+
+\[
+\text{Log Distance} = -10 \times \log_{10}(\text{Distance})
+\]
+
+This transformation allows the model to handle the wide range of distances more effectively and aligns with common practices in signal propagation modeling.
+
+### Linear Regression
+A simple linear regression model is used to predict the RSS values based on the calculated log distance. The model is implemented using the closed-form solution for linear regression:
+
+\[
+\beta = (X^T X)^{-1} X^T y
+\]
+
+Where:
+- \( X \) is the design matrix, which includes the log distances and a bias term (constant).
+- \( y \) is the vector of RSS values.
+
+The linear regression model helps establish a baseline and provides a straightforward relationship between log distance and RSS values.
