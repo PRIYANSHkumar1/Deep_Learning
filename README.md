@@ -32,3 +32,13 @@ You can install these dependencies using `pip`:
 
 ```bash
 pip install numpy pandas matplotlib tensorflow scikit-learn
+
+## Data Description
+
+The project uses two main input files:
+
+1. **locations.txt**: This file contains the (X, Y) coordinates of the receivers and transmitters. Each row in this file represents the coordinates of a location. These coordinates are used to calculate the log distance between transmitter-receiver pairs.
+
+2. **rss_values.txt**: This file contains the corresponding RSS values for the transmitter-receiver pairs. The values are organized in a matrix format, where rows represent different receivers, and columns represent different transmitters. The matrix entries indicate the signal strength (RSS) between a specific transmitter and receiver. If a value is `np.inf`, it indicates that no valid signal is received between that pair.
+
+Both files are required to be present in the same directory as the Python script for proper execution of the model.                 please give me whole content in text only
