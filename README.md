@@ -76,3 +76,6 @@ A deep neural network (DNN) is built using TensorFlow/Keras to predict the RSS v
 - Two hidden layers with ReLU activations (640 and 480 units).
 - An output layer with a linear activation function to predict the continuous RSS value.
 - The neural network is designed to capture more complex, non-linear relationships between log distance and RSS values.
+
+### Data Preprocessing
+The data is normalized using MinMaxScaler to scale the log distance and RSS values to the range [0, 1]. This normalization improves the convergence of the neural network during training. The dataset is then split into training and testing sets, following an 80:20 ratio.
