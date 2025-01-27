@@ -79,3 +79,19 @@ A deep neural network (DNN) is built using TensorFlow/Keras to predict the RSS v
 
 ### Data Preprocessing
 The data is normalized using MinMaxScaler to scale the log distance and RSS values to the range [0, 1]. This normalization improves the convergence of the neural network during training. The dataset is then split into training and testing sets, following an 80:20 ratio.
+
+## Usage
+Prepare the Data: Ensure you have locations.txt and rss_values.txt files in the directory. These files should contain the coordinates and RSS values, respectively.
+
+Run the Model: Execute the Python script to train both the linear regression model and the neural network model.
+
+```
+python model.py
+```
+Evaluate the Models: The script will evaluate both models on the test set and output the Mean Squared Error (MSE) and Mean Absolute Error (MAE) for both the linear regression and neural network models.
+
+Results: The script will plot:
+
+A graph comparing the training and testing data with the predicted values.
+Training and testing loss curves over epochs.
+A bar plot showing the performance metrics (MSE and MAE)
