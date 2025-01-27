@@ -72,7 +72,7 @@ The linear regression model helps establish a baseline and provides a straightfo
 ### Neural Network
 A deep neural network (DNN) is built using TensorFlow/Keras to predict the RSS values from the log distance. The network architecture consists of:
 
-An input layer of size 1 (log distance).
-Two hidden layers with ReLU activations (640 and 480 units).
-An output layer with a linear activation function to predict the continuous RSS value.
-The neural network is designed to capture more complex, non-linear relationships between log distance and RSS values.
+- An input layer of size 1 (log distance).
+- Two hidden layers with ReLU activations (640 and 480 units).
+- An output layer with a linear activation function to predict the continuous RSS value.
+- The neural network is designed to capture more complex, non-linear relationships between log distance and RSS values.
