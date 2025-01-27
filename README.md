@@ -51,7 +51,6 @@ The distance between a receiver and a transmitter is calculated using the Euclid
 \[
 \text{Distance} = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2}
 \]
-
 This distance is then converted to a logarithmic scale using the formula:
 
 \[
